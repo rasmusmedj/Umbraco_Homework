@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme Corp Webapp", "Acme Corp Webapp\Acme Corp Webapp.csproj", "{39A716AB-E53E-40A1-A462-21850D4F1995}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Acme Corp Testproject", "Acme Corp Testproject\Acme Corp Testproject.csproj", "{C99FA387-8534-4E0E-B17B-E39FB579C5AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39A716AB-E53E-40A1-A462-21850D4F1995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39A716AB-E53E-40A1-A462-21850D4F1995}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39A716AB-E53E-40A1-A462-21850D4F1995}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39A716AB-E53E-40A1-A462-21850D4F1995}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C99FA387-8534-4E0E-B17B-E39FB579C5AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C99FA387-8534-4E0E-B17B-E39FB579C5AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C99FA387-8534-4E0E-B17B-E39FB579C5AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C99FA387-8534-4E0E-B17B-E39FB579C5AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C0A1F45-A6E9-447A-A397-09BA420914B9}
+	EndGlobalSection
+EndGlobal

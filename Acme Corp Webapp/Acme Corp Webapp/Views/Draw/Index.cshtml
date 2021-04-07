@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Acme_Corp_Webapp.Models.DrawSubmission>
+@{
+    Layout = "_Layout";
+}
+<h1>Submissions</h1>
+<p>Welcome to the Grand Acme Corp Webapp Serialnumber Draw! (working title)</p>
+<p>To enter the draw you will need to be at least 18 and be in possession of a valid serial number.</p>
+<form>
+    <button asp-action="Create">Enter draw</button>
+</form>
+<br />
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

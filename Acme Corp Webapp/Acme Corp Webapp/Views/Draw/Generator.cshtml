@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Acme_Corp_Webapp.Models.SerialNumber>
+@{
+    Layout = "_Layout";
+}
+<form role="form" asp-action="Generator">
+    <div asp-validation-summary="All"/>
+
+    <div>
+        <label>How many serial numbers do you wish to generate?</label>
+        <input type="number" name="amount" />
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+    <div>
+        <button asp-action="Export">Export as CSV</button>
+    </div>
+</form>
+
+@foreach (var s in Model)
+{
+    @s.MySerialNumber
+    <br />
+}
+
+@section Scripts {
+    @{int amount = 0;}
+}

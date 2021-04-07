@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Acme_Corp_Webapp.Models.DrawSubmission>
+@{
+    Layout = "_Layout";
+}
+<h1>Submissions from users</h1>
+<p>In here you can view all the submissions for the draw. But only if you are an admin ;-)</p>
+
+@foreach (var s in Model)
+{
+    @s.FirstName
+    <br />
+    @s.LastName
+    <br />
+    @s.Email
+    <br />
+    @s.SerialNumber
+    <br />
+    @s.IsEighteen
+    <br />
+    @s.IsWinner
+    <br />
+    <br />
+}
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,83 @@
+﻿@model Acme_Corp_Webapp.Models.DrawSubmission
+@{
+    Layout = "_Layout";
+}
+
+@using (Html.BeginForm())
+{
+    Html.ValidationSummary();
+    <p>
+        @Html.LabelFor(x => x.FirstName)
+        @Html.EditorFor(x => x.FirstName)
+        @Html.ValidationMessageFor(x => x.FirstName)
+    </p>
+
+    <p>
+        @Html.LabelFor(x => x.LastName)
+        @Html.EditorFor(x => x.LastName)
+        @Html.ValidationMessageFor(x => x.LastName)
+    </p>
+
+    <p>
+        @Html.LabelFor(x => x.Email)
+        @Html.EditorFor(x => x.Email)
+        @Html.ValidationMessageFor(x => x.Email)
+    </p>
+
+    <p>
+        @Html.LabelFor(x => x.SerialNumber)
+        @Html.EditorFor(x => x.SerialNumber)
+        @Html.ValidationMessageFor(x => x.SerialNumber)
+    </p>
+
+    <p>
+        @Html.LabelFor(x => x.IsEighteen)
+        @Html.CheckBoxFor(x => x.IsEighteen)
+    </p>
+
+    <p>
+        <button type="submit">Submit</button>
+    </p>
+}
+
+@*I tried to make tag-helpers for this form. But i couldn't make the checkbox or the labels display
+    Maybe i'm missing something obvious
+    <form role="form" asp-action="Create">
+        <div asp-validation-summary="All" />
+
+        <div class="form-group">
+            <label asp-for="FirstName" />
+            <input type="text" asp-for="FirstName" class="form-control" />
+            <span asp-validation-for="FirstName" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="LastName" />
+            <input type="text" asp-for="LastName" class="form-control" />
+            <span asp-validation-for="LastName" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Email" />
+            <input type="email" asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="field-validation-error" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="SerialNumber" />
+            <input type="number" asp-for="SerialNumber" class="form-control" />
+            <span asp-validation-for="SerialNumber" class="field-validation-error" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="IsEighteen" />
+            <input type="checkbox" asp-for="IsEighteen" class="form-control" />
+            <span asp-validation-for="IsEighteen" class="field-validation-error" />
+        </div>
+
+        <div>
+            <label>&nbsp;</label>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+    </form>*@
