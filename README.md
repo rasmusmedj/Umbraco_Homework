@@ -1,13 +1,13 @@
 # Umbraco_Homework
 This project is made by Rasmus Jensen for Umbraco
 
-##Database
+## Database
 The solution uses Entity Framework. 
 The database will be instantiated when the program is run the first time. 
 The location of the Tables can be seen in appsettings.json
 If the database is deleted, it will be reinstantiated on the next run.
 
-##Admin
+## Admin
 To give a User Admin priviliges, you will need to make a few tweaks in the database.
 
 1. Run the application.
@@ -27,6 +27,6 @@ To give a User Admin priviliges, you will need to make a few tweaks in the datab
 Now the user should have Admin Priviliges :D
 (If you are still having trouble try to expand the UserId column and check if the entire UserId is correct)
 
-##Serialnumbers
+## Serialnumbers
 The solution does not contain any pregenerated serialnumbers. 
 The Admin can generate serialnumbers in the "Generator".
